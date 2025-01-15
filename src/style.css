@@ -4,10 +4,10 @@
     margin-right: auto;
     padding-left: 25px;
     padding-right: 25px;
-    width: 1200px;
+   width: 1200px; 
     }
     nav a { 
-        font-size: 20px;
+        font-size: 130%;
         color:  #615e5e;
         text-decoration: none;
     }
@@ -39,17 +39,14 @@
            color:  grey;
            text-align: center;
         }
-        
        
+
         
     .img-container img{
         position: relative;
-        width: 1677px;
-        height: 800px;
-        top: 110px;
-       
-       
-        
+        width: 100%;
+        height: 850px;
+        top: 85px;
     }
    
     
@@ -89,6 +86,7 @@
     
    
     }
+
     
     h1{
     font-family: "Inknut Antiqua";
@@ -276,3 +274,5 @@ text-align: center;
     font-size: 30px;
     color: #615e5e;
   }
+
+  
