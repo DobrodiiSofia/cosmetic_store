@@ -58,7 +58,6 @@
             position: absolute;
             top: 52%;
             left: 83%;
-            
             font-size: 150%;
             }
 
@@ -138,7 +137,8 @@
                 font-size: 18px;
                 color: #756868;
                 margin: 5px 0;
-            }
+           
+          }
             .product-2-card button {
                 background-color: #b31e1eca;
                 color: white;
@@ -150,4 +150,53 @@
                 font-size: 16px;
 
             }
+
+    
+.footer {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    background: #EAC6C6;
+    top: 700px;
+    height: 500px;
+    position: relative;
+   font-size: 23px;
+    overflow: hidden;
+  }
+  
+ 
+  
+  .footer-section {
+    flex: 1;
+    text-align: center;
+    border-right: 0.1px solid black;
+    height: 350px;
+    line-height: 40px;
+    top: 100px;
+    position: relative;
+    
+  }
+  
+  .footer-section:last-child {
+    border-right: none;
+  }
+  
+  
+  .footer-section p {
+    margin: 5px 0;
+    color: #615e5e;
+    
+  }
+  
+  .footer-section a {
+    color: #615e5e;
+    text-decoration: none;
+  }
+  h5{
+    font-size: 30px;
+    color: #615e5e;
+  }
+
+  
+
            
