@@ -10,6 +10,11 @@
         color:  #615e5e;
         text-decoration: none;
     }
+    .menu img {
+        width: 25px;
+        height:25px;
+    }
+
     header {
     background:rgba(234, 198, 198, 0.9);
     position:fixed;
@@ -50,7 +55,7 @@
             position: relative;
             width: 100%;
             height: 850px;
-            top: 85px;
+            top: 90px;
             
         }
        
@@ -59,6 +64,7 @@
             top: 52%;
             left: 83%;
             font-size: 150%;
+            font-family: Arial, sans-serif;
             }
 
             .product-container {
@@ -71,7 +77,7 @@
                 
             }
             .product-card {
-                background-color: #f5ecec;
+                background-color:#f2e4e35a;
                 border-radius: 30px;
                 box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
                 overflow: hidden;
@@ -116,7 +122,7 @@
                 justify-content: center;
             }
             .product-2-card {
-                background-color: #f5ecec;
+                background-color: #f2e4e35a;
                 border-radius: 30px;
                 box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
                 overflow: hidden;
@@ -151,52 +157,94 @@
 
             }
 
-    
-.footer {
-    display: flex;
-    justify-content: space-between;
-    padding: 20px;
-    background: #EAC6C6;
-    top: 700px;
-    height: 500px;
-    position: relative;
-   font-size: 23px;
-    overflow: hidden;
-  }
-  
- 
-  
-  .footer-section {
-    flex: 1;
-    text-align: center;
-    border-right: 0.1px solid black;
-    height: 350px;
-    line-height: 40px;
-    top: 100px;
-    position: relative;
-    
-  }
-  
-  .footer-section:last-child {
-    border-right: none;
-  }
-  
-  
-  .footer-section p {
-    margin: 5px 0;
-    color: #615e5e;
-    
-  }
-  
-  .footer-section a {
-    color: #615e5e;
-    text-decoration: none;
-  }
-  h5{
-    font-size: 30px;
-    color: #615e5e;
-  }
 
-  
+            .image-1-container {
+                float: right;
+                height: 500px;
+                top: 600px;
+                position: relative;
+                
+               
+               
+              }
+              
+            .image-1-container img {
+                width: 750px;
+                height: 500px;
+               
+               
+              }
+              
+              .text-1-container {
+                overflow: hidden;
+                top: 600px;
+                position: relative;
+                background-color:#f2e4e357 ;
+                padding: 167px;
+            
+               
+              }
+              .text-1-container p {
+                font-size: 20px;
+               
+                position: relative;
+                top: 10px;
+              }
+              .text-1-container h4{
+                font-size: 20px;
+              }
 
-           
+    
+            .footer {
+                display: flex;
+                justify-content: space-between;
+                padding: 20px;
+                background: #EAC6C6;
+                top: 900px;
+                height: 500px;
+                position: relative;
+               font-size: 23px;
+                overflow: hidden;
+                width:  97.6%;
+              }
+              
+             
+              
+              .footer-section {
+                flex: 1;
+                text-align: center;
+                border-right: 0.1px solid black;
+                height: 350px;
+                line-height: 40px;
+                top: 100px;
+                position: relative;
+                
+              }
+              .footer-section img{
+                width: 25px;
+                height: 25px;
+                margin-right: 15px;
+                }
+              .footer-section:last-child {
+                border-right: none;
+              }
+              
+              
+              .footer-section p {
+                margin: 5px 0;
+                color: #615e5e;
+                
+              }
+              
+              .footer-section a {
+                color: #615e5e;
+                text-decoration: none;
+              }
+              h5{
+                font-size: 30px;
+                color: #615e5e;
+              }
+            
+              
+            
+                       
