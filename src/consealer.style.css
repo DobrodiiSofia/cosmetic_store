@@ -55,7 +55,7 @@
         position: relative;
         width: 100%;
         height: 850px;
-        top: 90px;
+        top: 67px;
         
     }
    
@@ -112,17 +112,15 @@
 
         .image-1-container {
             float: left;
-            height: 500px;
-          
             position: relative;
             background-color:#f2e4e357 ;
-            height: 96%;
+            height: 550px;
             border-top-left-radius: 100px;
             border-bottom-left-radius: 100px;
           }
           .image-1-container img {
             width: 500px;
-            height: 545px;
+            height: 549px;
            border-radius: 100px;
           }
           .text-1-container {

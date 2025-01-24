@@ -56,7 +56,7 @@
             position: relative;
             width: 100%;
             height: 850px;
-            top: 90px;
+            top: 67px;
             
         }
        
@@ -411,7 +411,7 @@ justify-content: center;
 .image-6-container {
     float: left;
     height: 500px;
-    top: 1000px;
+    top: 1023px;
     position: relative;
 }
   
@@ -424,10 +424,10 @@ justify-content: center;
   
   .text-6-container {
     overflow: hidden;
-    top: 1085px;
+    top: 1090px;
     position: relative;
     background-color:#f2e4e357 ;
-    padding: 68px;
+    padding: 69px;
 
    
   }
