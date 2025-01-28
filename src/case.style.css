@@ -6,7 +6,7 @@
    width: 1200px; 
     }
     nav a { 
-        font-size: 120%;
+        font-size: 130%;
         color:  #615e5e;
         text-decoration: none;
     }
@@ -95,7 +95,7 @@
             margin: 10px 0;
         }
         .product-card p {
-            font-size: 18px;
+            font-size: 22px;
             color: #393434;
             margin: 5px 0;
         }
@@ -105,7 +105,7 @@
             border: none;
             padding: 6px 16px;
             margin: 10px 0;
-            border-radius: 3px;
+            border-radius: 12px;
             cursor: pointer;
             font-size: 16px;
 
