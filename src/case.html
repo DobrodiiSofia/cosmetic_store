@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lip Case</title>
+    <link rel="stylesheet" href="case.style.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <b> rhode</b>
+             <nav>
+                <ul class="menu">
+                    <li >
+                        <a href="index.html">Home</a>
+                    </li>
+                    <li >
+                        <a href="#footer">Contact Us</a>
+                    </li>
+                    <li>
+                        <a href="tel:+0660835210" class="call">Call Now</a>
+                    </li>
+
+                    <li>
+                        <a href="#" id="cart-icon"><img src="img/0.1.png" alt="Cart" width="25" height="25"> </a>
+                    </li>
+                        
+                    
+                </ul>
+             </nav>
+        </div>
+    </header>
+    <!--  вікно для кошика -->
+    <div id="cart-modal" class="cart-modal">
+        <div class="cart-modal-content">
+            <span class="close-btn" id="close-btn">&times;</span>
+            <h2>Your Cart</h2>
+            <div id="cart-items">
+                <!-- список товарів -->
+            </div>
+            <div class="cart-summary">
+                <p>Total: <span id="total-price">$0</span></p>
+                <button id="checkout-btn">Proceed to Checkout</button>
+            </div>
+        </div>
+    </div>
+
+
+
+<!-- вікно для реєстрації і оплати (сому оплату іще не зробила)-->
+<div id="checkout-modal" class="checkout-modal">
+    <div class="checkout-modal-content">
+        <span class="close-btn" id="close-checkout-btn">&times;</span>
+        <h2>Checkout</h2>
+        <div id="checkout-items">
+            <!-- форма реєстрації -->
+        </div>
+        <form id="registration-form">
+            <label for="name">Name</label>
+            <input type="text" id="name" required>
+            <label for="email">Email</label>
+            <input type="email" id="email" required>
+            <button type="submit">Register</button>
+        </form>
+        <p id="payment-message" style="display:none;">Registration successful! You can now proceed to payment.</p>
+        <button id="pay-now-btn" style="display:none;">Pay Now</button>
+    </div>
+</div>
+<script src="lipstick.js"></script>
+        </div>
+    </header>
+    <div class="img-container">
+        <img src="img/17.jpeg">
+        <div class="text-overlay">LIP CASE</div>
+
+    </div>
+    <div class="product-container">
+     <div class="product-card">
+         <img src="img/18.jpeg">
+         <h3>Lip case Ruspberry jelly</h3>
+         <p>38 $</p>
+         <button>Buy Now</button>
+     </div>
+     <div class="product-card">
+         <img src="img/19.jpeg" >
+         <h3>Lip case Ribbon</h3>
+         <p>40 $</p>
+         <button>Buy Now</button>
+     </div>
+     <div class="product-card">
+         <img src="img/20.jpeg" >
+         <h3>Lip case Peach</h3>
+         <p>38 $</p>
+         <button>Buy Now</button>
+     </div>
+     <div class="product-card">
+         <img src="img/21.jpeg" >
+         <h3>Lip case Espresso</h3>
+         <p>38 $</p>
+         <button>Buy Now</button>
+     </div>
+ </div>
+
+ <div class="outer-1-container">
+         
+    <div class="image-1-container">
+        <img src="img/22.webp" >
+      </div>
+      <div class="text-1-container">
+      <h4>lip case<br>
+        Your essentials in one place</h4>
+        <p>A silicone, bubble case for your phone that keeps your lip on<br> hand. Our design has a silky, soft touch feel and a puffy back for <br>easy gripping. Compatible with select iPhone models and your<br> favorite Peptide Lip Treatment or Tint.</p>
+        
+       </div>
+    </div>
+    
+</body>
+<footer class="footer" id="footer">
+   
+    
+    <div class="footer-section">
+        <h5>Contact Information</h5>
+        <p>
+            <a href="https://www.google.com/maps/place/60+29th+St,+San+Francisco,+CA+94110,+%D0%A1%D0%BF%D0%BE%D0%BB%D1%83%D1%87%D0%B5%D0%BD%D1%96+%D0%A8%D1%82%D0%B0%D1%82%D0%B8+%D0%90%D0%BC%D0%B5%D1%80%D0%B8%D0%BA%D0%B8/@37.744179,-122.4241432,17z/data=!3m1!4b1!4m6!3m5!1s0x808f7e42e1b683a9:0xe06ddc60b9f33cb!8m2!3d37.744179!4d-122.4215683!16s%2Fg%2F11c5ljqwjy?hl=uk&entry=ttu&g_ep=EgoyMDI1MDExMC4wIKXMDSoASAFQAw%3D%3D" > <img src="img/0.5.png" >60 29th Street San Francisco, <br>
+                507-Union Trade Center, <br>
+                United States America - 94110</a> 
+        </p>
+        <a href="tel:+095-777-0000"><img src="img/0.4.png" > 095-777-0000</a> <br>
+        <a href="tel:+066-888-0000"><img src="img/0.4.png"> 066-888-0000</a>
+       </div>
+    </div>
+    <div class="footer-section">
+      <h5>Social</h5>
+      <p> <a href="https://www.instagram.com/rhode/"><img src="img/0.2.png">Instagram</a></p>
+      <p> <a href="https://www.youtube.com/c/HaileyRhodeBieber"><img src="img/0.3.png" > YouTube</a></p>
+    </div>
+    <div class="footer-section">
+      <h5>Navigation</h5>
+     <p> <a href="index.html" >Main Menu</a></p>
+     <p> <a href="lipstick.html" > Lipsticks</a></p>
+     <p> <a href="skincare.html" > Skincare</a></p>
+    <p> <a href="consealer.html" > Cream Concealer</a></p>
+   
+    </div>
+    <div class="footer-section">
+      <h5>Support</h5>
+      <p>Drop us a note anytime:</p>
+      <a href="mailto:hello@rhodeskin.com">hello@rhodeskin.com</a>
+      <p>© rhode 2024</p>
+    </div>
+
+</footer>
+</html>

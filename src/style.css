@@ -1,0 +1,324 @@
+
+.container{
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 25px;
+    padding-right: 25px;
+   width: 1200px; 
+    }
+    nav a { 
+        font-size: 130%;
+        color:  #615e5e;
+        text-decoration: none;
+    }
+    .menu img {
+      width: 25px;
+      height:25px;
+  }
+    header {
+    background:rgba(234, 198, 198, 0.9);
+    position:fixed;
+    padding-top: 5px;
+    top: 0;
+    width: 100%;
+    left: 0;
+    z-index: 1;
+    }
+    header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    }
+
+    .menu{
+        
+        list-style:none ;
+        display: flex;
+        column-gap: 100px;
+        
+        }
+        .container b{
+           font-size: 35px;
+           font-family: ARIAL;
+           color:  grey;
+           text-align: center;
+        }
+       
+
+        
+    .img-container img{
+        position: relative;
+        width: 100%;
+        height: 850px;
+        top: 62px;
+    }
+   
+    
+    .text-overlay {
+    position: absolute;
+    top: 35%;
+    left: 77%;
+    font-size: 25px;
+    }
+    .text-2-overlay{
+    position: absolute;
+    top: 45%;
+    left: 77%;
+    
+    font-size: 25px;
+    }
+
+    .text-3-overlay{
+    position: absolute;
+    top: 55%;
+    left: 77%;
+   
+    font-size: 30px;
+    }
+    .text-4-overlay{
+    position: absolute;
+    top: 65%;
+    left: 77%;
+   
+    font-size: 13px;
+    border-radius:20px;
+    background: #A71010;
+    font-family: "ARIAL";
+    color: white;
+    padding: 10px 20px;
+    
+   
+    }
+
+    
+    h1{
+    font-family: "Inknut Antiqua";
+    text-align: center;
+    position: relative;
+    top: 200px;
+    font-size: 30px;
+    }
+   
+    
+    
+        .image-row {
+           
+            justify-content:space-evenly;
+            top: 230px;
+            position: relative;
+            display: flex;
+        
+         
+        }
+        .image-row img{
+            margin-right: 5px;
+            
+        }
+        
+        .img-1-container {
+            position: relative;
+           
+        }
+        
+        .img-1-container img {
+            width: 245px;
+            height: 250px;
+            display: block;
+            position: relative;
+            display: inline-block;
+            
+           
+        }
+        
+        .overlay {
+            
+            bottom: 60px;
+            background: rgba(255, 255, 255, 0.791); 
+          
+            color: black;
+            width: 100%;
+            text-align: center;
+           position: relative;
+           font-size: 17px;
+        }
+        
+        
+        .image-2-container {
+          float: left;
+          height: 500px;
+          top: 360px;
+          position: relative;
+         
+         
+      }
+        
+      .image-2-container img {
+          width: 600px;
+          height: 500px;
+          border-top-left-radius: 100px;
+          border-bottom-left-radius: 100px;
+         
+        }
+        
+        .text-2-container {
+          overflow: hidden;
+          top: 360px;
+          position: relative;
+          background-color:#EAC6C6;
+          padding: 40px;
+          
+          width: 600px;
+          border-top-right-radius: 100px;
+          border-bottom-right-radius: 100px;
+        }
+        .text-2-container p {
+          font-size: 26px;
+          left: 50px;
+          position: relative;
+          top: 30px;
+          line-height: 70px;
+        }
+        .text-2-container button {
+          font-size: 20px;
+          left: 50px;
+          position: relative;
+          top: 30px;
+          border-radius: 25px; ;
+          padding: 10px 20px;
+          background-color: rgba(128, 128, 128, 0.862);
+          border: none;
+        }
+        .outer-2-container{
+          display: flex;
+          justify-content: center;
+        }
+
+  h3{
+    position: relative;
+    top: 5px;
+    font-size: 20px;
+    color:  #8a7e7e;
+    font-style:initial;
+    line-height: 28px;
+   text-align: center;
+   
+ }
+
+  .text-blok{
+    background: rgba(242, 204, 204, 0.35);
+    padding: 20px 30px ;
+    top: 530px;
+    position: relative;
+  
+    
+  }
+  body{
+  margin: 0;
+    padding: 0; 
+    box-sizing: border-box; 
+    
+}
+
+.image-3-container {
+ 
+  height: 500px;
+  top: 700px;
+  position: relative;
+ 
+ 
+}
+
+.image-3-container img {
+  width: 600px;
+  height: 500px;
+  border-top-left-radius: 100px;
+  border-bottom-left-radius: 100px;
+ 
+}
+
+.text-3-container {
+  overflow: hidden;
+  top: 700px;
+  position: relative;
+  background-color:#D9D3E4;
+  padding: 40px;
+  
+  width: 600px;
+  border-top-right-radius: 100px;
+  border-bottom-right-radius: 100px;
+}
+.text-3-container p {
+  font-size: 23px;
+  left: 25px;
+  position: relative;
+  top: 80px;
+  color:#565353;
+  line-height: 30px;
+}
+
+.outer-3-container{
+  display: flex;
+  justify-content: center;
+}
+
+  
+
+.menu img {
+  position: relative;
+  width: 20px;
+  height: 20px;
+}
+
+
+
+.footer {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    background: #EAC6C6;
+    top: 900px;
+    height: 500px;
+    position: relative;
+   font-size: 23px;
+    overflow: hidden;
+  }
+  
+ 
+  
+  .footer-section {
+    flex: 1;
+    text-align: center;
+    border-right: 0.1px solid black;
+    height: 350px;
+    line-height: 40px;
+    top: 100px;
+    position: relative;
+    
+  }
+  .footer-section img{
+  width: 25px;
+  height: 25px;
+  margin-right: 15px;
+}
+
+  .footer-section:last-child {
+    border-right: none;
+  }
+  
+  
+  .footer-section p {
+    margin: 5px 0;
+    color: #615e5e;
+    
+  }
+  
+  .footer-section a {
+    color: #615e5e;
+    text-decoration: none;
+  }
+  h5{
+    font-size: 30px;
+    color: #615e5e;
+  }
+
+  
