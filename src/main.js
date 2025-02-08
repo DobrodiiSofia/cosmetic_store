@@ -1,16 +1,32 @@
-let currentPosition = 0;
+document.addEventListener("DOMContentLoaded", function () {
+    const carousel = document.querySelector(".carousel-container");
+    const slides = document.querySelectorAll(".carousel-slide");
+    const prevBtn = document.querySelector(".prev");
+    const nextBtn = document.querySelector(".next");
 
-function scrollProduct(direction) {
-    const productsContainer = document.querySelector('.products');
-    const productWidth = document.querySelector('.product-item').offsetWidth + 30; // враховуємо margin
+    let index = 0;
 
-    if (direction === 'right') {
-        if (currentPosition > -productsContainer.scrollWidth + window.innerWidth) return;
-        currentPosition -= productWidth;
-    } else if (direction === 'left') {
-        if (currentPosition === 0) return;
-        currentPosition += productWidth;
+    function showSlide(i) {
+        if (i >= slides.length) index = 0;
+        if (i < 0) index = slides.length - 1;
+        let offset = -index * 100;
+        carousel.style.transform = `translateX(${offset}%)`;
     }
 
-    productsContainer.style.transform = `translateX(${currentPosition}px)`;
-}
+    nextBtn.addEventListener("click", function () {
+        index++;
+        showSlide(index);
+    });
+
+    prevBtn.addEventListener("click", function () {
+        index--;
+        showSlide(index);
+    });
+
+    setInterval(() => {
+        index++;
+        showSlide(index);
+    }, 5000);
+});
+
+

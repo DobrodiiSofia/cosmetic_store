@@ -4,7 +4,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>rhode</title>
     <link rel="stylesheet" href="style.css">
-    <script src="main.js" defer></script>
+    
 </head>
 
 <body>
@@ -20,16 +20,52 @@
                         <a href="tel:+0660835210" class="call">Call Now</a>
                     </li>
                     <li>
-                        <a href="#" onclick="toggleCart()">
-                            <img src="img/0.1.png">
-                        </a>
-                    </li>
-                </ul>
-            </nav>
+                        <li>
+                            <a href="#" id="cart-icon"><img src="img/0.1.png" alt="Cart" width="25" height="25"> </a>
+                        </li>
+                            
+                        
+                    </ul>
+                 </nav>
+            </div>
+        </header>
+        <div id="cart-modal" class="cart-modal">
+            <div class="cart-modal-content">
+                <span class="close-btn" id="close-btn">&times;</span>
+                <h2>Your Cart</h2>
+                <div id="cart-items">
+                    
+                </div>
+                <div class="cart-summary">
+                    <p>Total: <span id="total-price">$0</span></p>
+                    <button id="checkout-btn">Proceed to Checkout</button>
+                </div>
+            </div>
         </div>
-    </header>
-
     
+    
+    
+    
+    <div id="checkout-modal" class="checkout-modal">
+        <div class="checkout-modal-content">
+            <span class="close-btn" id="close-checkout-btn">&times;</span>
+            <h2>Checkout</h2>
+            <div id="checkout-items">
+                
+            </div>
+            <form id="registration-form">
+                <label for="name">Name</label>
+                <input type="text" id="name" required>
+                <label for="email">Email</label>
+                <input type="email" id="email" required>
+                <button type="submit">Register</button>
+            </form>
+            <p id="payment-message" style="display:none;">Registration successful! You can now proceed to payment.</p>
+            <button id="pay-now-btn" style="display:none;">Pay Now</button>
+        </div>
+    </div>
+       
+        
     
 
     <div class="img-container">
@@ -94,6 +130,7 @@
                     </div>
                     
                     <div class="text-3-container">
+                    
         
                 <p>
                     We spent years working on our formulas with our skin<br> board of 
@@ -103,52 +140,145 @@
                     and chosen <br>for its efficacy because a happy skin barrier is a glowy skin barrier. 
                 </p>
                 </div>
+                
             </div>
     </div>
-
-
-
-       
-        
-
-    <footer class="footer" id="footer">
-        <div class="footer-section">
-            <h5>Contact Information</h5>
-            <p>
-                <a href="https://www.google.com/maps/place/...">
-                    <img src="img/0.5.png">60 29th Street San Francisco, <br>
-                    507-Union Trade Center, <br>
-                    United States America - 94110
-                </a>
-            </p>
-            <a href="tel:+095-777-0000"><img src="img/0.4.png"> 095-777-0000</a> <br>
-            <a href="tel:+066-888-0000"><img src="img/0.4.png"> 066-888-0000</a>
+<div class="carousel-wrapper">
+    <div class="product-carousel">
+        <div class="carousel-container">
+            <div class="carousel-slide">
+                <div class="product">
+                    <div class="image-container">
+                        <img src="img/37.jpeg" class="default-img">
+                        <img src="img/38.jpeg" class="hover-img">
+                    </div>
+                    <div class="product-info">
+                        <h3>MIRROR</h3>
+                        <p>The Rhode Mirror is a stylish and compact mirror for every day use.</p>
+                        <p>15$</p>
+                        <button class="buy-btn">Buy Now</button>
+                    </div>
+                </div>
+            </div>
+    
+            <div class="carousel-slide">
+                <div class="product">
+                    <div class="image-container">
+                        <img src="img/39.jpg" class="default-img">
+                        <img src="img/40.jpg" class="hover-img">
+                    </div>
+                    <div class="product-info">
+                        <h3>BOXED CANDLE</h3>
+                        <p>Fig & Lotus Blossom | West Elm.</p>
+                        <p>30$</p>
+                        <button class="buy-btn">Buy Now</button>
+                    </div>
+                </div>
+            </div>
+    
+            <div class="carousel-slide">
+                <div class="product">
+                    <div class="image-container">
+                        <img src="img/41.webp" class="default-img">
+                        <img src="img/42.jpg" class="hover-img">
+                    </div>
+                    <div class="product-info">
+                        <h3>SECRET BOX</h3>
+                        <p>Jellybean Glazing Fluid, Lip Tint Togo in one box</p>
+                        <p>43$</p>
+                        <button class="buy-btn">Buy Now</button>
+                    </div>
+                </div>
+            </div>
+    
+            <div class="carousel-slide">
+                <div class="product">
+                    <div class="image-container">
+                        <img src="img/43.webp" class="default-img">
+                        <img src="img/45.webp" class="hover-img">
+                    </div>
+                    <div class="product-info">
+                        <h3>PEPPERMINT GLAZE</h3>
+                        <p>Reduces puffiness and dark circles.</p>
+                        <p>36$</p>
+                        <button class="buy-btn">Buy Now</button>
+                    </div>
+                </div>
+            </div>
+    
+            <div class="carousel-slide">
+                <div class="product">
+                    <div class="image-container">
+                        <img src="img/44.jpg" class="default-img">
+                        <img src="img/46.webp" class="hover-img">
+                    </div>
+                    <div class="product-info">
+                        <h3>BIRTHDAY BOX</h3>
+                        <p>Gently removes dead skin cells.</p>
+                        <p>45$</p>
+                        <button class="buy-btn">Buy Now</button>
+                    </div>
+                </div>
+            </div>
+            <div class="carousel-slide">
+                <div class="product">
+                    <div class="image-container">
+                        <img src="img/47.webp" class="default-img">
+                        <img src="img/48.webp" class="hover-img">
+                    </div>
+                    <div class="product-info">
+                        <h3>TINT</h3>
+                        <p>New lip peptided tint, rose shade.</p>
+                        <p>19$</p>
+                        <button class="buy-btn">Buy Now</button>
+                    </div>
+                </div>
+            </div>
         </div>
+    
+        <button class="prev">&#10094;</button>
+        <button class="next">&#10095;</button>
+    </div>
+</div>    
 
-        <div class="footer-section">
-            <h5>Social</h5>
-            <p><a href="https://www.instagram.com/rhode/"><img src="img/0.2.png">Instagram</a></p>
-            <p><a href="https://www.youtube.com/c/HaileyRhodeBieber"><img src="img/0.3.png">YouTube</a></p>
-        </div>
-
-        <div class="footer-section">
-            <h5>Navigation</h5>
-            <p><a href="#main">Main Menu</a></p>
-            <p><a href="lipstick.html">Lipsticks</a></p>
-            <p><a href="skincare.html">Skincare</a></p>
-            <p><a href="consealer.html">Cream Concealer</a></p>
-            <p><a href="case.html">Lip Case</a></p>
-        </div>
-
-        <div class="footer-section">
-            <h5>Support</h5>
-            <p>Drop us a note anytime:</p>
-            <a href="mailto:hello@rhodeskin.com">hello@rhodeskin.com</a>
-            <p>© rhode 2024</p>
-        </div>
-    </footer>
-
-
+    <script src="main.js"></script>
 
 </body>
+<footer class="footer" id="footer">
+    <div class="footer-section">
+        <h5>Contact Information</h5>
+        <p>
+            <a href="https://www.google.com/maps/place/...">
+                <img src="img/0.5.png">60 29th Street San Francisco, <br>
+                507-Union Trade Center, <br>
+                United States America - 94110
+            </a>
+        </p>
+        <a href="tel:+095-777-0000"><img src="img/0.4.png"> 095-777-0000</a> <br>
+        <a href="tel:+066-888-0000"><img src="img/0.4.png"> 066-888-0000</a>
+    </div>
+
+    <div class="footer-section">
+        <h5>Social</h5>
+        <p><a href="https://www.instagram.com/rhode/"><img src="img/0.2.png">Instagram</a></p>
+        <p><a href="https://www.youtube.com/c/HaileyRhodeBieber"><img src="img/0.3.png">YouTube</a></p>
+    </div>
+
+    <div class="footer-section">
+        <h5>Navigation</h5>
+        <p><a href="#main">Main Menu</a></p>
+        <p><a href="lipstick.html">Lipsticks</a></p>
+        <p><a href="skincare.html">Skincare</a></p>
+        <p><a href="consealer.html">Cream Concealer</a></p>
+        <p><a href="case.html">Lip Case</a></p>
+    </div>
+
+    <div class="footer-section">
+        <h5>Support</h5>
+        <p>Drop us a note anytime:</p>
+        <a href="mailto:hello@rhodeskin.com">hello@rhodeskin.com</a>
+        <p>© rhode 2024</p>
+    </div>
+</footer>
+
 </html>

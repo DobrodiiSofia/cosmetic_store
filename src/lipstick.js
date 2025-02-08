@@ -21,7 +21,7 @@ document.getElementById('close-btn').addEventListener('click', function() {
 
 // Add product to cart
 function addToCart(productName, price, imgSrc) {
-    const restrictedProducts = ['Peptid-Lippentönung in Espressoe', 'Peptide Lip Treatment Unscented'];
+    const restrictedProducts = ['Peptid-Lippentönung in Espressoe', 'Peptide Lip Treatment Unscented', 'Spicy marg'];
 
     if (restrictedProducts.includes(productName)) {
         alert(`${productName} is out of stock.`);
@@ -146,4 +146,67 @@ function updateCheckoutItems() {
         checkoutItemsContainer.appendChild(itemDiv);
     });
 }
+function setupBuyNowButtons() {
+    document.querySelectorAll('.product-card button').forEach(button => {
+        button.addEventListener('click', function() {
+            const productCard = this.closest('.product-card');
+            const productName = productCard.querySelector('h3').innerText;
+            const price = parseFloat(productCard.querySelector('p').innerText.replace('$', ''));
+            const imgSrc = productCard.querySelector('img').src;
+
+            addToCart(productName, price, imgSrc);
+        });
+    });
+}
+
+// Proceed to checkout
+document.getElementById('checkout-btn').addEventListener('click', function() {
+    const checkoutModal = document.getElementById('checkout-modal');
+    checkoutModal.style.display = 'flex';
+    setTimeout(() => {
+        checkoutModal.classList.remove('close');
+    }, 10);
+    updateCheckoutItems();
+});
+
+// Close checkout modal
+document.getElementById('close-checkout-btn').addEventListener('click', function() {
+    const checkoutModal = document.getElementById('checkout-modal');
+    checkoutModal.classList.add('close');
+    setTimeout(() => {
+        checkoutModal.style.display = 'none';
+    }, 500);
+});
+
+// Update checkout items
+function updateCheckoutItems() {
+    const checkoutItemsContainer = document.getElementById('checkout-items');
+    checkoutItemsContainer.innerHTML = '';
+    checkoutItemsContainer.style.display = 'flex';
+    checkoutItemsContainer.style.flexWrap = 'wrap';
+    checkoutItemsContainer.style.gap = '10px';
+
+    cart.forEach(item => {
+        const itemDiv = document.createElement('div');
+        itemDiv.classList.add('checkout-item');
+        itemDiv.style.display = 'flex';
+        itemDiv.style.flexDirection = 'column';
+        itemDiv.style.alignItems = 'center';
+
+        itemDiv.innerHTML = `
+            <img src="${item.imgSrc}" alt="${item.name}">
+            <div class="checkout-item-details">
+                <h4>${item.name}</h4>
+                <p>$${item.price}</p>
+                <p>Quantity: ${item.quantity}</p>
+            </div>
+        `;
+        checkoutItemsContainer.appendChild(itemDiv);
+    });
+}
+
+// Alert on registration completion
+document.getElementById('register-btn').addEventListener('click', function() {
+    alert('Дякуємо за замовлення, оплата при отриманні! Доставка 5-10 днів');
+});
 
