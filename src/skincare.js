@@ -1,33 +1,3 @@
-document.addEventListener("DOMContentLoaded", function () {
-    const carousel = document.querySelector(".carousel-container");
-    const slides = document.querySelectorAll(".carousel-slide");
-    const prevBtn = document.querySelector(".prev");
-    const nextBtn = document.querySelector(".next");
-
-    let index = 0;
-
-    function showSlide(i) {
-        if (i >= slides.length) index = 0;
-        if (i < 0) index = slides.length - 1;
-        let offset = -index * 100;
-        carousel.style.transform = `translateX(${offset}%)`;
-    }
-
-    nextBtn.addEventListener("click", function () {
-        index++;
-        showSlide(index);
-    });
-
-    prevBtn.addEventListener("click", function () {
-        index--;
-        showSlide(index);
-    });
-
-    setInterval(() => {
-        index++;
-        showSlide(index);
-    }, 5000);
-});
 let cart = [];
 
 // Open cart modal
@@ -51,7 +21,7 @@ document.getElementById('close-btn').addEventListener('click', function() {
 
 // Add product to cart
 function addToCart(productName, price, imgSrc) {
-    const restrictedProducts = [];
+    const restrictedProducts = ['Peptid-Lippentönung in Espressoe', 'Peptide Lip Treatment Unscented', 'Spicy marg'];
 
     if (restrictedProducts.includes(productName)) {
         alert(`${productName} is out of stock.`);
@@ -122,7 +92,7 @@ function changeQuantity(productName, delta) {
 }
 
 // Add to cart when "Buy Now" is clicked
-document.querySelectorAll('.product-info button').forEach(button => {
+document.querySelectorAll('.image-container button').forEach(button => {
     button.addEventListener('click', function() {
         const productName = this.parentElement.querySelector('h3').innerText;
         const price = parseFloat(this.parentElement.querySelector('p').innerText.replace('$', ''));
@@ -239,4 +209,3 @@ function updateCheckoutItems() {
 document.getElementById('register-btn').addEventListener('click', function() {
     alert('Дякуємо за замовлення, оплата при отриманні! Доставка 5-10 днів');
 });
-

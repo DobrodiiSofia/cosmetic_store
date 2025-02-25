@@ -40,6 +40,7 @@ html {
             width: 25px;
             height:25px;
         }
+
         .container b{
            font-size: 35px;
            font-family: ARIAL;
@@ -132,8 +133,8 @@ html {
             position: relative;
             background-color:#f2e4e357 ;
             padding: 135px;
-           width: 520px;
-           border-top-right-radius: 100px;
+            width: 520px;
+            border-top-right-radius: 100px;
             border-bottom-right-radius: 100px;
           
           }
@@ -325,7 +326,7 @@ transform: translateX(0);
 }
 }
 
-/* Анімація для кнопок в кошику */
+
 .cart-item button {
 transition: background-color 0.3s ease, transform 0.3s ease;
 }

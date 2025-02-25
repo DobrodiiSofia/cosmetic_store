@@ -211,11 +211,12 @@ html {
     padding: 20px 30px ;
     top: 530px;
     position: relative;
-  
-    
   }
+
+
+ 
   body{
-  margin: 0;
+    margin: 0;
     padding: 0; 
     box-sizing: border-box; 
     
@@ -490,15 +491,28 @@ margin: 10px 0;
 #payment-message {
 margin-top: 20px;
 }
+
+
+.text-blok2{
+  background: rgba(242, 204, 204, 0.35);
+    padding: 20px 30px ;
+    top: 530px;
+    position: relative;
+}
   
   .carousel-wrapper {
     position: relative;
-    margin-top: 890px; 
+    margin-top: 890px;
+    margin-bottom: 50px;
+    height: 600px;
+    
+
 }
 
 .product-carousel {
     width: 100%;
     max-width: 1200px; /* Обмеження ширини */
+    
     margin: 0 auto;
     position: relative;
     overflow: hidden;
@@ -514,7 +528,7 @@ margin-top: 20px;
 .carousel-container {
     display: flex;
     transition: transform 0.5s ease-in-out;
-    width: 1200;
+    width: 1800;
 
 }
 
@@ -534,6 +548,7 @@ margin-top: 20px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
     width: 60%;
     transition: transform 0.3s ease-in-out;
+    width: 90%;
 }
 
 .product:hover {
@@ -542,11 +557,12 @@ margin-top: 20px;
 
 .image-container {
     position: relative;
-    width: 300px;
-    height: 250px;
+    width: 350px;
+    height: 300px;
     overflow: hidden;
     border-radius: 10px;
     margin-right: 20px;
+    
 }
 
 .image-container img {
@@ -569,14 +585,16 @@ margin-top: 20px;
 }
 
 .product-info h3 {
-    font-size: 24px;
+    font-size: 30px;
     color: #333;
+    
 }
 
 .product-info p {
-    font-size: 16px;
+    font-size: 25px;
     color: #666;
     margin: 10px 0;
+    
 }
 
 .buy-btn {
