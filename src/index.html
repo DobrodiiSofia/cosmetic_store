@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>rhode</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="img/49.jpeg" type="image/png">
+
     
 </head>
 
@@ -38,13 +40,22 @@
                     
                 </div>
                 <div class="cart-summary">
+                    
+                    <p id="discount-message" style="color: green; font-weight: bold;"></p>
                     <p>Total: <span id="total-price">$0</span></p>
                     <button id="checkout-btn">Proceed to Checkout</button>
                 </div>
             </div>
         </div>
     
-    
+        <div id="discount-modal" class="modal">
+            <div class="modal-content">
+                <span class="close-modal">&times;</span>
+                <img src="img/50.jpg" alt="Знижка 15%" class="modal-img">
+                <p>Зараз діє <strong>15% знижка</strong> при покупці більше 5 боксів або 10 інших товарів! </p>
+            </div>
+        </div>
+        
     
     
     <div id="checkout-modal" class="checkout-modal">
@@ -56,12 +67,18 @@
             </div>
             <form id="registration-form">
                 <label for="name">Name</label>
-                <input type="text" id="name" required>
-                <label for="email">Email</label>
+                <input type="text" id="name" minlength="10" required>
             
-                <input type="email" id="email" required>
-                <button type="submit">Register</button>
+                <label for="email">Email</label>
+                <input type="email" id="email" minlength="10" required>
+            
+                <label for="location">Location</label>
+                <input type="text" id="location" minlength="10" required>
+            
+                <button id="register-btn" type="submit">Register</button>
             </form>
+            
+            
             
         </div>
     </div>
@@ -74,7 +91,7 @@
         <div class="text-overlay">Skin care</div>
         <div class="text-2-overlay">Decorative cosmetics</div>
         <div class="text-3-overlay">rhode</div>
-        <a href="#"><div class="text-4-overlay">SHOP NOW</div></a>
+        <button class="text-4-overlay">SHOP NOW</button>
     </div>
 
     <h1 id="main">Shop By Categories</h1>
@@ -147,11 +164,11 @@
     
 
 <div class="text-blok2">
-    <h3>New</h3>
+    <h3>Limited edition Rhode boxes by Hailey Bieber are an exclusive set of favorite products for perfect skin care. <br>Each box combines iconic formulas and stylish design, creating the perfect beauty ritual.</h3>
 </div>
 
 
-<div class="carousel-wrapper">
+<div class="carousel-wrapper" id="carousel">
     <div class="product-carousel">
         <div class="carousel-container">
             <div class="carousel-slide">

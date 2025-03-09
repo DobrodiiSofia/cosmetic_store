@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cream Consealer</title>
     <link rel="stylesheet" href="consealer.style.css">
+    <link rel="icon" href="img/49.jpeg" type="image/png">
 </head>
 <body>
     <header>
@@ -40,6 +41,7 @@
                 
             </div>
             <div class="cart-summary">
+                <p id="discount-message" style="color: green; font-weight: bold;"></p>
                 <p>Total: <span id="total-price">$0</span></p>
                 <button id="checkout-btn">Proceed to Checkout</button>
             </div>
@@ -58,11 +60,15 @@
         </div>
         <form id="registration-form">
             <label for="name">Name</label>
-            <input type="text" id="name" required>
+            <input type="text" id="name" minlength="10" required>
+        
             <label for="email">Email</label>
-            <label for="name">Location</label>
-            <input type="email" id="email" required>
-            <button type="submit">Register</button>
+            <input type="email" id="email" minlength="10" required>
+        
+            <label for="location">Location</label>
+            <input type="text" id="location" minlength="10" required>
+        
+            <button id="register-btn" type="submit">Register</button>
         </form>
         
     </div>
@@ -150,7 +156,7 @@
         <h5>Navigation</h5>
        <p> <a href="index.html" >Main Menu</a></p>
         <p> <a href="lipstick.html" > Lipsticks</a></p>
-       <p> <a href="consealer.html" > Skincare</a></p>
+       <p> <a href="skincare.html" > Skincare</a></p>
        <p> <a href="case.html" > Lip Case</a></p>
       </div>
       <div class="footer-section">

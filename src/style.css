@@ -1,6 +1,87 @@
 html {
   scroll-behavior: smooth;
 }
+.img-container {
+  opacity: 0;
+  transform: translateY(50px);
+  animation: slideUp 1.5s ease-out forwards;
+}
+
+@keyframes slideUp {
+  from {
+      opacity: 0;
+      transform: translateY(50px);
+  }
+  to {
+      opacity: 1;
+      transform: translateY(0);
+  }
+}
+
+
+.modal {
+  display: none;
+  position: fixed;
+  top: 30%;
+  left: 37%;
+  right: 25%;
+  transform: translate(-50%, -50%);
+  width: 350px;
+  background: rgba(233, 214, 214, 0.9);
+  padding: 20px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+  text-align: center;
+  opacity: 0;
+  animation: fadeInUp 0.5s ease-out forwards;
+  z-index: 1000;
+}
+
+
+
+@keyframes fadeInUp {
+  from {
+      opacity: 0;
+      transform: translateY(30px);
+  }
+  to {
+      opacity: 1;
+      transform: translateY(0);
+  }
+}
+
+.modal-content {
+  position: relative;
+}
+
+.close-modal {
+  position: absolute;
+  top: 5px;
+  right: 10px;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.modal-img {
+  width: 100%;
+  height: 50%;
+  border-radius: 8px;
+  margin-bottom: 10px;
+}
+
+
+.image-row .img-1-container,
+.footer-section {
+  transition: transform 0.3s ease-in-out;
+}
+
+.image-row .img-1-container:hover,
+.footer-section:hover {
+  transform: scale(1.1);
+}
+
+
+
 .container{
     margin-left: auto;
     margin-right: auto;
@@ -213,15 +294,6 @@ html {
     position: relative;
   }
 
-
- 
-  body{
-    margin: 0;
-    padding: 0; 
-    box-sizing: border-box; 
-    
-}
-
 .image-3-container {
  
   height: 500px;
@@ -324,29 +396,29 @@ html {
     color: #615e5e;
   }
   .cart-modal {
-    display: none; /* Спочатку приховано */
+    display: none; 
     position: fixed;
     top: 0;
-    right: 0; /* Переміщуємо вікно праворуч */
-    width: 33%; /* Задаємо ширину на одну третину екрану */
+    right: 0; 
+    width: 33%; 
     height: 100%;
     background-color: rgba(0, 0, 0, 0.5);
     z-index: 2;
-    justify-content: flex-start; /* Вікно відображається з правої частини */
+    justify-content: flex-start; 
     align-items: flex-start;
-    transition: transform 0.5s ease-out; /* Анімація для закриття */
+    transition: transform 0.5s ease-out; 
   }
   
-  /* Анімація для закриття кошика */
+  
   .cart-modal.close {
-    transform: translateX(100%); /* Зсуваємо кошик вправо */
+    transform: translateX(100%); 
   }
   
   .cart-modal-content {
     background-color: white;
     border-radius: 10px;
     padding: 20px;
-    width: 100%; /* Пишемо на всю ширину контейнера */
+    width: 100%; 
     max-height: 80%;
     overflow-y: auto;
     position: relative;
@@ -416,17 +488,17 @@ cursor: pointer;
 font-size: 16px;
 }
 
-/* Покращена анімація для карток товарів */
+
 .product-card, .product-2-card {
 transition: transform 0.3s ease-in-out, box-shadow 0.3s ease;
 }
 
 .product-card:hover, .product-2-card:hover {
-transform: scale(1.05); /* Товар трохи збільшується при наведенні */
-box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Покращена тінь */
+transform: scale(1.05); 
+box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); 
 }
 
-/* Покращена анімація для кошика */
+
 .cart-modal-content {
 animation: slideInFromRight 0.5s ease-out;
 }
@@ -440,7 +512,7 @@ transform: translateX(0);
 }
 }
 
-/* Анімація для кнопок в кошику */
+
 .cart-item button {
 transition: background-color 0.3s ease, transform 0.3s ease;
 }
@@ -493,17 +565,45 @@ margin-top: 20px;
 }
 
 
-.text-blok2{
+.text-blok2 {
   background: rgba(242, 204, 204, 0.35);
-    padding: 20px 30px ;
-    top: 530px;
-    position: relative;
+  padding: 20px 30px;
+  position: relative;
+  top: 830px; /* Збільшено значення для переміщення вниз */
+  text-align: center;
+  font-size: 22px;
+  font-weight: bold;
 }
+#checkout-items {
+  display: flex;
+  flex-wrap: nowrap;
+  overflow-x: auto; /* Дозволяє горизонтальний скрол */
+  gap: 15px; /* Відстань між товарами */
+  padding: 10px;
+}
+
+.checkout-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-width: 150px; /* Мінімальна ширина товару */
+  text-align: center;
+  background: #f8f8f8;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+.checkout-item img {
+  width: 100px;
+  height: auto;
+  border-radius: 5px;
+}
+
   
   .carousel-wrapper {
     position: relative;
-    margin-top: 890px;
-    margin-bottom: 50px;
+    margin-top: 1000px;
+    margin-bottom: 0px;
     height: 600px;
     
 
@@ -511,7 +611,7 @@ margin-top: 20px;
 
 .product-carousel {
     width: 100%;
-    max-width: 1200px; /* Обмеження ширини */
+    max-width: 1200px; 
     
     margin: 0 auto;
     position: relative;

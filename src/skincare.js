@@ -147,7 +147,7 @@ function updateCheckoutItems() {
     });
 }
 function setupBuyNowButtons() {
-    document.querySelectorAll('.product-card button').forEach(button => {
+    document.querySelectorAll('.image-container button').forEach(button => {
         button.addEventListener('click', function() {
             const productCard = this.closest('.product-card');
             const productName = productCard.querySelector('h3').innerText;
@@ -206,6 +206,20 @@ function updateCheckoutItems() {
 }
 
 // Alert on registration completion
-document.getElementById('register-btn').addEventListener('click', function() {
-    alert('Дякуємо за замовлення, оплата при отриманні! Доставка 5-10 днів');
+document.getElementById('registration-form').addEventListener('submit', function(event) {
+    // Отримуємо значення з полів
+    var name = document.getElementById('name').value;
+    var email = document.getElementById('email').value;
+    var location = document.getElementById('location').value;
+
+    // Перевірка на мінімальну кількість символів і обов'язковість полів
+    if (name.length < 10 || email.length < 10 || location.length < 10) {
+        alert("кожне поле має мати щонайменше 10 символів");
+        event.preventDefault(); // Зупиняє відправку форми
+        return; // Після цього форма не буде відправлена
+    }
+
+    // Якщо перевірка пройшла успішно, відправляємо повідомлення про успіх
+    alert("Дякуємо за замовлення! Менеджер зв'яжеться з вами через пів години.");
 });
+

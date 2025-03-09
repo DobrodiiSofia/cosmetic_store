@@ -2,6 +2,56 @@
 html {
   scroll-behavior: smooth;
 }
+.img-container {
+  opacity: 0;
+  transform: translateY(50px);
+  animation: slideUp 1.5s ease-out forwards;
+}
+
+@keyframes slideUp {
+  from {
+      opacity: 0;
+      transform: translateY(50px);
+  }
+  to {
+      opacity: 1;
+      transform: translateY(0);
+  }
+}
+
+.image-row .img-1-container,
+.footer-section {
+  transition: transform 0.3s ease-in-out;
+}
+
+.image-row .img-1-container:hover,
+.footer-section:hover {
+  transform: scale(1.1);
+}
+#checkout-items {
+  display: flex;
+  flex-wrap: nowrap;
+  overflow-x: auto; /* Дозволяє горизонтальний скрол */
+  gap: 15px; /* Відстань між товарами */
+  padding: 10px;
+}
+
+.checkout-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-width: 150px; /* Мінімальна ширина товару */
+  text-align: center;
+  background: #f8f8f8;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+.checkout-item img {
+  width: 100px;
+  height: auto;
+  border-radius: 5px;
+}
 .container{
     margin-left: auto;
     margin-right: auto;
